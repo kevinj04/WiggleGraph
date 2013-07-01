@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47608C4A17824B0B001DC4C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47608C4917824B0B001DC4C3 /* Foundation.framework */; };
+		47608C4C17824B0B001DC4C3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47608C4B17824B0B001DC4C3 /* CoreGraphics.framework */; };
+		47608C4E17824B0B001DC4C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47608C4D17824B0B001DC4C3 /* UIKit.framework */; };
+		47608C5417824B0B001DC4C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47608C5217824B0B001DC4C3 /* InfoPlist.strings */; };
+		47608C5617824B0B001DC4C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47608C5517824B0B001DC4C3 /* main.m */; };
+		47608C5A17824B0B001DC4C3 /* WGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47608C5917824B0B001DC4C3 /* WGAppDelegate.m */; };
+		47608C5D17824B0B001DC4C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47608C5B17824B0B001DC4C3 /* Main.storyboard */; };
+		47608C6017824B0B001DC4C3 /* WGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47608C5F17824B0B001DC4C3 /* WGViewController.m */; };
+		47608C6217824B0B001DC4C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47608C6117824B0B001DC4C3 /* Images.xcassets */; };
+		47608C6917824B0C001DC4C3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47608C6817824B0C001DC4C3 /* XCTest.framework */; };
+		47608C6A17824B0C001DC4C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47608C4917824B0B001DC4C3 /* Foundation.framework */; };
+		47608C6B17824B0C001DC4C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47608C4D17824B0B001DC4C3 /* UIKit.framework */; };
+		47608C7317824B0C001DC4C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47608C7117824B0C001DC4C3 /* InfoPlist.strings */; };
+		47608C7517824B0C001DC4C3 /* WiggleGraphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47608C7417824B0C001DC4C3 /* WiggleGraphTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47608C6C17824B0C001DC4C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47608C3E17824B0B001DC4C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47608C4517824B0B001DC4C3;
+			remoteInfo = WiggleGraph;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		47608C4617824B0B001DC4C3 /* WiggleGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiggleGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47608C4917824B0B001DC4C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		47608C4B17824B0B001DC4C3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		47608C4D17824B0B001DC4C3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		47608C5117824B0B001DC4C3 /* WiggleGraph-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WiggleGraph-Info.plist"; sourceTree = "<group>"; };
+		47608C5317824B0B001DC4C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		47608C5517824B0B001DC4C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47608C5717824B0B001DC4C3 /* WiggleGraph-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WiggleGraph-Prefix.pch"; sourceTree = "<group>"; };
+		47608C5817824B0B001DC4C3 /* WGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGAppDelegate.h; sourceTree = "<group>"; };
+		47608C5917824B0B001DC4C3 /* WGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGAppDelegate.m; sourceTree = "<group>"; };
+		47608C5C17824B0B001DC4C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		47608C5E17824B0B001DC4C3 /* WGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGViewController.h; sourceTree = "<group>"; };
+		47608C5F17824B0B001DC4C3 /* WGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGViewController.m; sourceTree = "<group>"; };
+		47608C6117824B0B001DC4C3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		47608C6717824B0C001DC4C3 /* WiggleGraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiggleGraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47608C6817824B0C001DC4C3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		47608C7017824B0C001DC4C3 /* WiggleGraphTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WiggleGraphTests-Info.plist"; sourceTree = "<group>"; };
+		47608C7217824B0C001DC4C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		47608C7417824B0C001DC4C3 /* WiggleGraphTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WiggleGraphTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47608C4317824B0B001DC4C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47608C4C17824B0B001DC4C3 /* CoreGraphics.framework in Frameworks */,
+				47608C4E17824B0B001DC4C3 /* UIKit.framework in Frameworks */,
+				47608C4A17824B0B001DC4C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47608C6417824B0C001DC4C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47608C6917824B0C001DC4C3 /* XCTest.framework in Frameworks */,
+				47608C6B17824B0C001DC4C3 /* UIKit.framework in Frameworks */,
+				47608C6A17824B0C001DC4C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47608C3D17824B0B001DC4C3 = {
+			isa = PBXGroup;
+			children = (
+				47608C4F17824B0B001DC4C3 /* WiggleGraph */,
+				47608C6E17824B0C001DC4C3 /* WiggleGraphTests */,
+				47608C4817824B0B001DC4C3 /* Frameworks */,
+				47608C4717824B0B001DC4C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47608C4717824B0B001DC4C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47608C4617824B0B001DC4C3 /* WiggleGraph.app */,
+				47608C6717824B0C001DC4C3 /* WiggleGraphTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47608C4817824B0B001DC4C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47608C4917824B0B001DC4C3 /* Foundation.framework */,
+				47608C4B17824B0B001DC4C3 /* CoreGraphics.framework */,
+				47608C4D17824B0B001DC4C3 /* UIKit.framework */,
+				47608C6817824B0C001DC4C3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47608C4F17824B0B001DC4C3 /* WiggleGraph */ = {
+			isa = PBXGroup;
+			children = (
+				47608C5817824B0B001DC4C3 /* WGAppDelegate.h */,
+				47608C5917824B0B001DC4C3 /* WGAppDelegate.m */,
+				47608C5B17824B0B001DC4C3 /* Main.storyboard */,
+				47608C5E17824B0B001DC4C3 /* WGViewController.h */,
+				47608C5F17824B0B001DC4C3 /* WGViewController.m */,
+				47608C6117824B0B001DC4C3 /* Images.xcassets */,
+				47608C5017824B0B001DC4C3 /* Supporting Files */,
+			);
+			path = WiggleGraph;
+			sourceTree = "<group>";
+		};
+		47608C5017824B0B001DC4C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47608C5117824B0B001DC4C3 /* WiggleGraph-Info.plist */,
+				47608C5217824B0B001DC4C3 /* InfoPlist.strings */,
+				47608C5517824B0B001DC4C3 /* main.m */,
+				47608C5717824B0B001DC4C3 /* WiggleGraph-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47608C6E17824B0C001DC4C3 /* WiggleGraphTests */ = {
+			isa = PBXGroup;
+			children = (
+				47608C7417824B0C001DC4C3 /* WiggleGraphTests.m */,
+				47608C6F17824B0C001DC4C3 /* Supporting Files */,
+			);
+			path = WiggleGraphTests;
+			sourceTree = "<group>";
+		};
+		47608C6F17824B0C001DC4C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47608C7017824B0C001DC4C3 /* WiggleGraphTests-Info.plist */,
+				47608C7117824B0C001DC4C3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47608C4517824B0B001DC4C3 /* WiggleGraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47608C7817824B0C001DC4C3 /* Build configuration list for PBXNativeTarget "WiggleGraph" */;
+			buildPhases = (
+				47608C4217824B0B001DC4C3 /* Sources */,
+				47608C4317824B0B001DC4C3 /* Frameworks */,
+				47608C4417824B0B001DC4C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiggleGraph;
+			productName = WiggleGraph;
+			productReference = 47608C4617824B0B001DC4C3 /* WiggleGraph.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47608C6617824B0C001DC4C3 /* WiggleGraphTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47608C7B17824B0C001DC4C3 /* Build configuration list for PBXNativeTarget "WiggleGraphTests" */;
+			buildPhases = (
+				47608C6317824B0C001DC4C3 /* Sources */,
+				47608C6417824B0C001DC4C3 /* Frameworks */,
+				47608C6517824B0C001DC4C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47608C6D17824B0C001DC4C3 /* PBXTargetDependency */,
+			);
+			name = WiggleGraphTests;
+			productName = WiggleGraphTests;
+			productReference = 47608C6717824B0C001DC4C3 /* WiggleGraphTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47608C3E17824B0B001DC4C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WG;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = somethingpointless;
+				TargetAttributes = {
+					47608C6617824B0C001DC4C3 = {
+						TestTargetID = 47608C4517824B0B001DC4C3;
+					};
+				};
+			};
+			buildConfigurationList = 47608C4117824B0B001DC4C3 /* Build configuration list for PBXProject "WiggleGraph" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47608C3D17824B0B001DC4C3;
+			productRefGroup = 47608C4717824B0B001DC4C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47608C4517824B0B001DC4C3 /* WiggleGraph */,
+				47608C6617824B0C001DC4C3 /* WiggleGraphTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47608C4417824B0B001DC4C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47608C6217824B0B001DC4C3 /* Images.xcassets in Resources */,
+				47608C5417824B0B001DC4C3 /* InfoPlist.strings in Resources */,
+				47608C5D17824B0B001DC4C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47608C6517824B0C001DC4C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47608C7317824B0C001DC4C3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47608C4217824B0B001DC4C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47608C6017824B0B001DC4C3 /* WGViewController.m in Sources */,
+				47608C5A17824B0B001DC4C3 /* WGAppDelegate.m in Sources */,
+				47608C5617824B0B001DC4C3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47608C6317824B0C001DC4C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47608C7517824B0C001DC4C3 /* WiggleGraphTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47608C6D17824B0C001DC4C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47608C4517824B0B001DC4C3 /* WiggleGraph */;
+			targetProxy = 47608C6C17824B0C001DC4C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		47608C5217824B0B001DC4C3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47608C5317824B0B001DC4C3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		47608C5B17824B0B001DC4C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47608C5C17824B0B001DC4C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		47608C7117824B0C001DC4C3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47608C7217824B0C001DC4C3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47608C7617824B0C001DC4C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		47608C7717824B0C001DC4C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47608C7917824B0C001DC4C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiggleGraph/WiggleGraph-Prefix.pch";
+				INFOPLIST_FILE = "WiggleGraph/WiggleGraph-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		47608C7A17824B0C001DC4C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiggleGraph/WiggleGraph-Prefix.pch";
+				INFOPLIST_FILE = "WiggleGraph/WiggleGraph-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		47608C7C17824B0C001DC4C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WiggleGraph.app/WiggleGraph";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiggleGraph/WiggleGraph-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WiggleGraphTests/WiggleGraphTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		47608C7D17824B0C001DC4C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WiggleGraph.app/WiggleGraph";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiggleGraph/WiggleGraph-Prefix.pch";
+				INFOPLIST_FILE = "WiggleGraphTests/WiggleGraphTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47608C4117824B0B001DC4C3 /* Build configuration list for PBXProject "WiggleGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47608C7617824B0C001DC4C3 /* Debug */,
+				47608C7717824B0C001DC4C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47608C7817824B0C001DC4C3 /* Build configuration list for PBXNativeTarget "WiggleGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47608C7917824B0C001DC4C3 /* Debug */,
+				47608C7A17824B0C001DC4C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		47608C7B17824B0C001DC4C3 /* Build configuration list for PBXNativeTarget "WiggleGraphTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47608C7C17824B0C001DC4C3 /* Debug */,
+				47608C7D17824B0C001DC4C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47608C3E17824B0B001DC4C3 /* Project object */;
+}
