@@ -65,7 +65,7 @@
 #pragma mark - Setters/Getters
 - (void)setPlotValues:(NSArray *)plotValues {
     [super setPlotValues:plotValues];
-    [self generateLines];
+    self.lineSegments = [self generateLines];
 }
 
 #pragma mark - Update
