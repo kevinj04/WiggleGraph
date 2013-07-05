@@ -98,9 +98,11 @@
     CGContextFillPath(context);
 
     // for debugging
+    /*
     for (WGCurvyLine *line in self.lineSegments) {
         [line drawControlPointsInContext:context];
     }
+     */
 }
 
 @end
