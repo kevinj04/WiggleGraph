@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WGBoxyView.h"
+#import "WGCurvyView.h"
 
 @interface WGViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet WGBoxyView *boxyView;
+@property (strong, nonatomic) IBOutlet WGCurvyView *curvyView;
 
 @end

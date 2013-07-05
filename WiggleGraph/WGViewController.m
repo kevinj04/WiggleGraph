@@ -9,7 +9,6 @@
 #import "WGViewController.h"
 
 @interface WGViewController ()
-
 @end
 
 @implementation WGViewController
@@ -18,6 +17,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.curvyView.wiggleSize = 2;
+    self.curvyView.plotSize = 20;
 }
 
 - (void)didReceiveMemoryWarning
