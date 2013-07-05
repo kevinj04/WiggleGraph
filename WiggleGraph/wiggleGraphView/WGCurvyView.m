@@ -49,7 +49,7 @@
 
         line.point2.variance = 20;
         [line.point2 randomizePhase];
-g
+
         line.width = [self segmentWidth];
 
         [lines addObject:line];
