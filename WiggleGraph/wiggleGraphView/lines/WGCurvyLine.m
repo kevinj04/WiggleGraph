@@ -64,7 +64,7 @@
     return self.point2.x * self.width - self.width/2.0;
 }
 - (CGFloat)y2 {
-    return self.point2.y +self.point2.wiggle;
+    return self.point2.y - self.point2.wiggle;
 }
 - (CGFloat)x3 {
     return self.point2.x * self.width;
@@ -74,6 +74,19 @@
 }
 - (void)drawInContext:(CGContextRef)context {
     CGContextAddCurveToPoint(context, self.x1, self.y1, self.x2, self.y2, self.x3, self.y3);
+}
+- (void)drawControlPointsInContext:(CGContextRef)context {
+    CGContextSetRGBStrokeColor(context, 1.0, 0.0, 0.0, 1.0);
+    CGContextMoveToPoint(context, self.point1.x*self.width, self.point1.y);
+    CGContextAddLineToPoint(context, self.x1, self.y1);
+    CGContextStrokePath(context);
+
+    CGContextSetRGBStrokeColor(context, 0.0, 0.0, 1.0, 1.0);
+    CGContextMoveToPoint(context, self.x3, self.y3);
+    CGContextAddLineToPoint(context, self.x2, self.y2);
+    CGContextStrokePath(context);
+
+
 }
 
 @end

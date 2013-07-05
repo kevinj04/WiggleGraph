@@ -21,5 +21,6 @@
 
 - (void)update;
 - (void)drawInContext:(CGContextRef)context;
+- (void)drawControlPointsInContext:(CGContextRef)context;
 
 @end

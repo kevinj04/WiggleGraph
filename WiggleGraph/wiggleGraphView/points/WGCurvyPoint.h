@@ -18,5 +18,6 @@
 @property (assign, nonatomic) CGFloat speed;
 
 - (CGFloat)wiggle;
+- (void)randomizePhase;
 
 @end

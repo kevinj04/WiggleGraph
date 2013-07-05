@@ -40,11 +40,11 @@
 }
 
 - (void)randomizePhase {
-    self.phase = (100 - arc4random_uniform(200))/100.0;
+    self.phase = (100.0 - arc4random_uniform(200.0))/100.0;
 }
 
 - (void)randomizeVariance {
-    self.variance = (100 - arc4random_uniform(200))/10.0;
+    self.variance = (100.0 - arc4random_uniform(200.0))/10.0;
 }
 
 #pragma mark - Update
@@ -69,6 +69,11 @@
 #pragma mark - Access Methods
 - (CGFloat)wiggle {
     return self.phase * self.variance;
+}
+
+#pragma mark - Pretty Print
+- (NSString *)description {
+    return [NSString stringWithFormat:@"CurvyPoint<%p> x:%0.1f y:%0.1f phase:%0.1f variance:%0.1f wiggle:%0.1f", self, self.x, self.y, self.phase, self.variance, [self wiggle]];
 }
 
 @end
