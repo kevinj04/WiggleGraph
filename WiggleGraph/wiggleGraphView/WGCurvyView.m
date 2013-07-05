@@ -62,6 +62,12 @@
     return lines;
 }
 
+#pragma mark - Setters/Getters
+- (void)setPlotValues:(NSArray *)plotValues {
+    [super setPlotValues:plotValues];
+    [self generateLines];
+}
+
 #pragma mark - Update
 - (void)update {
     [self updateLineSegments];
