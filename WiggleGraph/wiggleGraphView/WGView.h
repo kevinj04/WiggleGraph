@@ -16,6 +16,7 @@
 
 @property (strong, nonatomic) CADisplayLink *displayLink;
 
+- (void)setup;
 - (void)update;
 
 - (NSArray *)generatePlotValues;

@@ -10,4 +10,6 @@
 
 @interface WGCurvyView : WGView
 
+@property (strong, nonatomic) NSArray *lineSegments;
+
 @end

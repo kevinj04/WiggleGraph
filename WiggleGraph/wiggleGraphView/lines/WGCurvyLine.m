@@ -41,6 +41,10 @@
     return self;
 }
 
++ (id)lineWithInitialCGPoint:(CGPoint)start andEndCGPoint:(CGPoint)end {
+    return [[WGCurvyLine alloc] initWithInitialCGPoint:start andEndCGPoint:end];
+}
+
 #pragma mark - Update
 - (void)update {
     [self.point1 update];

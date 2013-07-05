@@ -7,6 +7,7 @@
 //
 
 #import "WGCurvyView.h"
+#import "WGCurvyLine.h"
 
 static CGFloat curvePhase = -1.0;
 static CGFloat curvePhaseDirection = 1.0;
@@ -14,6 +15,12 @@ static CGFloat curvePhaseSpeed = .01;
 
 @implementation WGCurvyView
 
+#pragma mark - Initialization
+- (id)init {
+
+    self = [super init];
+    return self;
+}
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -23,15 +30,24 @@ static CGFloat curvePhaseSpeed = .01;
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
+- (void)setup {
+    [super setup];
+    self.lineSegments = [self generateLines];
 }
-*/
 
+- (NSArray *)generateLines {
+
+    NSMutableArray *lines = [NSMutableArray arrayWithCapacity:self.plotSize-1];
+    for (int i=0; i<self.plotSize-1; i++) {
+        CGPoint start = CGPointMake(i, [self.plotValues[i] floatValue]);
+        CGPoint end = CGPointMake(i+1, [self.plotValues[i+1] floatValue ]);
+        WGCurvyLine *line = [WGCurvyLine lineWithInitialCGPoint:start andEndCGPoint:end];
+        [lines addObject:line];
+    }
+    return lines;
+}
+
+#pragma mark - Update
 - (void)update {
     [self updateCurvePhase];
     [super update];

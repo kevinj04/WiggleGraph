@@ -14,6 +14,7 @@
 @property (strong, nonatomic) WGPlotPoint *point1;
 @property (strong, nonatomic) WGPlotPoint *point2;
 
++ (id)lineWithInitialCGPoint:(CGPoint)start andEndCGPoint:(CGPoint)end;
 - (id)initWithInitialCGPoint:(CGPoint)start andEndCGPoint:(CGPoint)end;
 - (id)initWithInitialPoint:(WGPlotPoint *)start andEndPoint:(WGPlotPoint *)end;
 
