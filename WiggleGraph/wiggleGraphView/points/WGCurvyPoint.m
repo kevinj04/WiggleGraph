@@ -10,15 +10,33 @@
 
 @implementation WGCurvyPoint
 
+#pragma mark - Initialization
 - (id)init {
     self = [super init];
     if (self) {
-        self.phase = 0;
-        self.variance = 0;
-        self.speed = 0.1;
-        direction = 1.0;
+        [self setup];
     }
     return self;
+}
+
+- (id)initDataPoint:(NSInteger)dataPointNumber withValue:(NSNumber *)value {
+
+    self = [super initDataPoint:dataPointNumber withValue:value];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+- (void)setup {
+    self.phase = 0;
+    self.variance = 0;
+    self.speed = 0.1;
+    direction = 1.0;
+}
+
++ (id)dataPoint:(NSInteger)dataPointNumber withValue:(NSNumber *)value {
+    return [[WGCurvyPoint alloc] initDataPoint:dataPointNumber withValue:value];
 }
 
 - (void)randomizePhase {
@@ -26,7 +44,7 @@
 }
 
 - (void)randomizeVariance {
-    self.variance = (100 - arc4random_uniform(200))/100.0;
+    self.variance = (100 - arc4random_uniform(200))/10.0;
 }
 
 #pragma mark - Update
@@ -46,6 +64,11 @@
 
 - (void)updatePhase {
     self.phase += direction * self.speed;
+}
+
+#pragma mark - Access Methods
+- (CGFloat)wiggle {
+    return self.phase * self.variance;
 }
 
 @end

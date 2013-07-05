@@ -16,4 +16,8 @@
 - (id)initDataPoint:(NSInteger)dataPointNumber withValue:(NSNumber *)value;
 - (void)update;
 
+- (NSInteger)dataPointIndex;
+- (CGFloat)x;
+- (CGFloat)y;
+
 @end

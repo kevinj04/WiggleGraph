@@ -7,15 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WGPlotPoint.h"
+#import "WGCurvyPoint.h"
 
 @interface WGCurvyLine : NSObject
 
-@property (strong, nonatomic) WGPlotPoint *point1;
-@property (strong, nonatomic) WGPlotPoint *point2;
+@property (strong, nonatomic) WGCurvyPoint *point1;
+@property (strong, nonatomic) WGCurvyPoint *point2;
+@property (assign, nonatomic) CGFloat width;
 
 + (id)lineWithInitialCGPoint:(CGPoint)start andEndCGPoint:(CGPoint)end;
 - (id)initWithInitialCGPoint:(CGPoint)start andEndCGPoint:(CGPoint)end;
-- (id)initWithInitialPoint:(WGPlotPoint *)start andEndPoint:(WGPlotPoint *)end;
+- (id)initWithInitialPoint:(WGCurvyPoint *)start andEndPoint:(WGCurvyPoint *)end;
+
+- (void)update;
+- (void)drawInContext:(CGContextRef)context;
 
 @end

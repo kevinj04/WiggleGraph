@@ -37,4 +37,17 @@
     // this is overridden in subclasses for added funtimes.
 }
 
+#pragma mark - Access Methods
+- (NSInteger)dataPointIndex {
+    return roundf(self.graphLocation.x);
+}
+
+- (CGFloat)x {
+    return self.graphLocation.x;
+}
+
+- (CGFloat)y {
+    return self.graphLocation.y;
+}
+
 @end

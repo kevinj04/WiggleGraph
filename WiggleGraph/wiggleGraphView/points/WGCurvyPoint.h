@@ -17,4 +17,6 @@
 @property (assign, nonatomic) CGFloat variance;
 @property (assign, nonatomic) CGFloat speed;
 
+- (CGFloat)wiggle;
+
 @end
