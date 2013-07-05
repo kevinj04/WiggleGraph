@@ -9,5 +9,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '5.0'
   s.source_files = 'WiggleGraph/**/*.{h,m}'
   s.requires_arc = true
-  s.frameworks = 'CoreGraphics'
+  s.frameworks = 'CoreGraphics', 'QuartzCore'
 end
