@@ -16,6 +16,8 @@
 @property (assign, nonatomic) CGFloat phase;
 @property (assign, nonatomic) CGFloat variance;
 @property (assign, nonatomic) CGFloat speed;
+@property (assign, nonatomic) CGFloat maxPhase;
+@property (assign, nonatomic) CGFloat minPhase;
 
 - (CGFloat)wiggle;
 - (void)randomizePhase;

@@ -44,10 +44,14 @@
             line.point1 = lastLine.point2;
         } else {
             line.point1.variance = 20;
+            line.point2.maxPhase = arc4random_uniform(100.0)/100.0;
+            line.point2.minPhase = -1.0 * arc4random_uniform(100.0)/100.0;
             [line.point1 randomizePhase];
         }
 
         line.point2.variance = 20;
+        line.point2.maxPhase = arc4random_uniform(100.0)/100.0;
+        line.point2.minPhase = -1.0 * arc4random_uniform(100.0)/100.0;
         [line.point2 randomizePhase];
 
         line.width = [self segmentWidth];

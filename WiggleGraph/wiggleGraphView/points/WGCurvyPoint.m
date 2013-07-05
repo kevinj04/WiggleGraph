@@ -31,7 +31,9 @@
 - (void)setup {
     self.phase = 0;
     self.variance = 0;
-    self.speed = 0.1;
+    self.speed = 0.02;
+    self.maxPhase = 1.0;
+    self.minPhase = -1.0;
     direction = 1.0;
 }
 
@@ -40,7 +42,9 @@
 }
 
 - (void)randomizePhase {
-    self.phase = (100.0 - arc4random_uniform(200.0))/100.0;
+    CGFloat randomValue = (100.0 - arc4random_uniform(200.0))/100.0;
+    if (randomValue > 0) { self.phase = randomValue * self.maxPhase; }
+    else { self.phase = randomValue * self.minPhase; }
 }
 
 - (void)randomizeVariance {
@@ -55,9 +59,9 @@
 }
 
 - (void)updateDirection {
-    if (self.phase > 1.0) {
+    if (self.phase > self.maxPhase) {
         direction = -1.0;
-    } else if (self.phase < -1.0) {
+    } else if (self.phase < self.minPhase) {
         direction = 1.0;
     }
 }
