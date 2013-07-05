@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		47405BBE1787370C00960E6D /* WGPlotPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 47405BBD1787370C00960E6D /* WGPlotPoint.m */; };
 		47405BC11787372100960E6D /* WGCurvyPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 47405BC01787372100960E6D /* WGCurvyPoint.m */; };
+		47405BC517873FA700960E6D /* WGCurvyLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 47405BC417873FA700960E6D /* WGCurvyLine.m */; };
 		47608C4A17824B0B001DC4C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47608C4917824B0B001DC4C3 /* Foundation.framework */; };
 		47608C4C17824B0B001DC4C3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47608C4B17824B0B001DC4C3 /* CoreGraphics.framework */; };
 		47608C4E17824B0B001DC4C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47608C4D17824B0B001DC4C3 /* UIKit.framework */; };
@@ -43,6 +44,8 @@
 		47405BBD1787370C00960E6D /* WGPlotPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGPlotPoint.m; sourceTree = "<group>"; };
 		47405BBF1787372100960E6D /* WGCurvyPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGCurvyPoint.h; sourceTree = "<group>"; };
 		47405BC01787372100960E6D /* WGCurvyPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGCurvyPoint.m; sourceTree = "<group>"; };
+		47405BC317873FA700960E6D /* WGCurvyLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGCurvyLine.h; sourceTree = "<group>"; };
+		47405BC417873FA700960E6D /* WGCurvyLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGCurvyLine.m; sourceTree = "<group>"; };
 		47608C4617824B0B001DC4C3 /* WiggleGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiggleGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47608C4917824B0B001DC4C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		47608C4B17824B0B001DC4C3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -103,6 +106,15 @@
 				47405BC01787372100960E6D /* WGCurvyPoint.m */,
 			);
 			path = points;
+			sourceTree = "<group>";
+		};
+		47405BC217873F9400960E6D /* lines */ = {
+			isa = PBXGroup;
+			children = (
+				47405BC317873FA700960E6D /* WGCurvyLine.h */,
+				47405BC417873FA700960E6D /* WGCurvyLine.m */,
+			);
+			path = lines;
 			sourceTree = "<group>";
 		};
 		47608C3D17824B0B001DC4C3 = {
@@ -182,6 +194,7 @@
 		47608C7E17824B4C001DC4C3 /* wiggleGraphView */ = {
 			isa = PBXGroup;
 			children = (
+				47405BC217873F9400960E6D /* lines */,
 				47405BBB1787370C00960E6D /* points */,
 				47608C7F17824B6A001DC4C3 /* WGView.h */,
 				47608C8017824B6A001DC4C3 /* WGView.m */,
@@ -299,6 +312,7 @@
 				47608C6017824B0B001DC4C3 /* WGViewController.m in Sources */,
 				47608C5A17824B0B001DC4C3 /* WGAppDelegate.m in Sources */,
 				47608C5617824B0B001DC4C3 /* main.m in Sources */,
+				47405BC517873FA700960E6D /* WGCurvyLine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

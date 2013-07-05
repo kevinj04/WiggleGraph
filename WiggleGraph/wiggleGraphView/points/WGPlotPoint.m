@@ -10,6 +10,7 @@
 
 @implementation WGPlotPoint
 
+#pragma mark - Initialization
 - (id)init {
     self = [super init];
     if (self) {
@@ -27,6 +28,11 @@
     return self;
 }
 
++ (id)dataPoint:(NSInteger)dataPointNumber withValue:(NSNumber *)value {
+    return [[WGPlotPoint alloc] initDataPoint:dataPointNumber withValue:value];
+}
+
+#pragma mark - Update
 - (void)update {
     // this is overridden in subclasses for added funtimes.
 }

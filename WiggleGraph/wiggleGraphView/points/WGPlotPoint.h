@@ -12,6 +12,8 @@
 
 @property (assign, nonatomic) CGPoint graphLocation;
 
++ (id)dataPoint:(NSInteger)dataPointNumber withValue:(NSNumber *)value;
+- (id)initDataPoint:(NSInteger)dataPointNumber withValue:(NSNumber *)value;
 - (void)update;
 
 @end
