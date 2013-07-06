@@ -36,20 +36,21 @@
     NSMutableArray *lines = [NSMutableArray arrayWithCapacity:self.plotSize-1];
     WGCurvyLine *lastLine = nil;
     for (int i=0; i<self.plotSize-1; i++) {
-        CGPoint start = CGPointMake(i, self.frame.size.height - [self.plotValues[i] floatValue]);
-        CGPoint end = CGPointMake(i+1, self.frame.size.height - [self.plotValues[i+1] floatValue]);
+        CGPoint start = CGPointMake(i, [self.plotValues[i] floatValue]);
+        CGPoint end = CGPointMake(i+1, [self.plotValues[i+1] floatValue]);
         WGCurvyLine *line = [WGCurvyLine lineWithInitialCGPoint:start andEndCGPoint:end];
+        line.graphHeight = self.frame.size.height;
 
         if (lastLine) {
             line.point1 = lastLine.point2;
         } else {
-            line.point1.variance = 20;
+            line.point1.variance = [self calculateVarianceForDataPoint:line.point1];
             line.point2.maxPhase = arc4random_uniform(100.0)/100.0;
             line.point2.minPhase = -1.0 * arc4random_uniform(100.0)/100.0;
             [line.point1 randomizePhase];
         }
 
-        line.point2.variance = 20;
+        line.point2.variance = [self calculateVarianceForDataPoint:line.point2];
         line.point2.maxPhase = arc4random_uniform(100.0)/100.0;
         line.point2.minPhase = -1.0 * arc4random_uniform(100.0)/100.0;
         [line.point2 randomizePhase];
@@ -68,10 +69,23 @@
     self.lineSegments = [self generateLines];
 }
 
+- (void)setVarianceMethod:(CGFloat (^)(WGCurvyPoint *))varianceMethod {
+    _varianceMethod = varianceMethod;
+    self.lineSegments = [self generateLines];
+}
+
 #pragma mark - Update
 - (void)update {
     [self updateLineSegments];
     [super update];
+}
+
+- (CGFloat)calculateVarianceForDataPoint:(WGCurvyPoint *)point {
+    if (self.varianceMethod) {
+        return self.varianceMethod(point);
+    } else {
+        return 20;
+    }
 }
 
 - (void)updateLineSegments {

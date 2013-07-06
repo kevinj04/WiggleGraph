@@ -7,9 +7,11 @@
 //
 
 #import "WGView.h"
+#import "WGCurvyPoint.h"
 
 @interface WGCurvyView : WGView
 
 @property (strong, nonatomic) NSArray *lineSegments;
+@property (copy, nonatomic) CGFloat (^varianceMethod) (WGCurvyPoint *);
 
 @end

@@ -14,6 +14,7 @@
 @property (strong, nonatomic) WGCurvyPoint *point1;
 @property (strong, nonatomic) WGCurvyPoint *point2;
 @property (assign, nonatomic) CGFloat width;
+@property (assign, nonatomic) CGFloat graphHeight;
 
 + (id)lineWithInitialCGPoint:(CGPoint)start andEndCGPoint:(CGPoint)end;
 - (id)initWithInitialCGPoint:(CGPoint)start andEndCGPoint:(CGPoint)end;

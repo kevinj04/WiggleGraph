@@ -17,6 +17,7 @@
     if (self) {
         self.point1 = nil;
         self.point2 = nil;
+        self.graphHeight = 0.0;
         self.width = 0;
     }
     return self;
@@ -73,17 +74,20 @@
     return self.point2.y;
 }
 - (void)drawInContext:(CGContextRef)context {
-    CGContextAddCurveToPoint(context, self.x1, self.y1, self.x2, self.y2, self.x3, self.y3);
+    CGContextAddCurveToPoint(context, self.x1, self.graphHeight - self.y1, self.x2, self.graphHeight - self.y2, self.x3, self.graphHeight - self.y3);
 }
 - (void)drawControlPointsInContext:(CGContextRef)context {
+
+    if (self.graphHeight <= 0) { return; };
+
     CGContextSetRGBStrokeColor(context, 1.0, 0.0, 0.0, 1.0);
-    CGContextMoveToPoint(context, self.point1.x*self.width, self.point1.y);
-    CGContextAddLineToPoint(context, self.x1, self.y1);
+    CGContextMoveToPoint(context, self.point1.x*self.width, self.graphHeight - self.point1.y);
+    CGContextAddLineToPoint(context, self.x1, self.graphHeight - self.y1);
     CGContextStrokePath(context);
 
     CGContextSetRGBStrokeColor(context, 0.0, 0.0, 1.0, 1.0);
-    CGContextMoveToPoint(context, self.x3, self.y3);
-    CGContextAddLineToPoint(context, self.x2, self.y2);
+    CGContextMoveToPoint(context, self.x3, self.graphHeight - self.y3);
+    CGContextAddLineToPoint(context, self.x2, self.graphHeight - self.y2);
     CGContextStrokePath(context);
 
 
