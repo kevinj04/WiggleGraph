@@ -104,7 +104,7 @@
 - (void)plotWithContext:(CGContextRef)context {
 
     CGContextMoveToPoint(context, 0, self.frame.size.height);
-    CGContextAddLineToPoint(context, 0, self.frame.size.height + [self valueAtIndex:0]);
+    CGContextAddLineToPoint(context, 0, self.frame.size.height - [self valueAtIndex:0]);
 
     for (WGCurvyLine *line in self.lineSegments) {
         [line drawInContext:context];
