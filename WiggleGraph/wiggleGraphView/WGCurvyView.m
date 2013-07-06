@@ -114,7 +114,7 @@
     CGContextClosePath(context);
 
     CGContextSetLineWidth(context, 1.0);
-    CGContextSetRGBFillColor(context, 0.07, 0.78, 0.12, 1.0);
+    CGContextSetFillColorWithColor(context, self.fillColor.CGColor);
     CGContextFillPath(context);
 
     // for debugging

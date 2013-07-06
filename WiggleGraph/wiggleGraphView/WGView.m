@@ -35,6 +35,7 @@
 
     self.plotSize = 10;
     self.wiggleSize = 50;
+    self.fillColor = [UIColor greenColor];
     self.plotValues = [self generatePlotValues];
 }
 
@@ -101,7 +102,7 @@
 
     [self plotWithContext:context];
 
-    CGContextSetRGBStrokeColor(context, 0.07, 0.78, 0.12, 1.0);
+    CGContextSetFillColorWithColor(context, self.fillColor.CGColor);
     CGContextStrokePath(context);
 }
 

@@ -13,6 +13,7 @@
 @property (strong, nonatomic) NSArray *plotValues;
 @property (assign, nonatomic) NSInteger plotSize;
 @property (assign, nonatomic) CGFloat wiggleSize;
+@property (strong, nonatomic) UIColor *fillColor;
 
 @property (strong, nonatomic) CADisplayLink *displayLink;
 
