@@ -74,11 +74,6 @@
     self.lineSegments = [self generateLines];
 }
 
-- (void)setFrame:(CGRect)frame {
-    [super setFrame:frame];
-    [self generateLines];
-}
-
 #pragma mark - Update
 - (void)update {
     [self updateLineSegments];
@@ -104,6 +99,10 @@
     return self.frame.size.width / (self.plotSize - 1);
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    [self generateLines];
+}
 
 // make classes for plot points, have them each on their own phase
 - (void)plotWithContext:(CGContextRef)context {
