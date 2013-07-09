@@ -74,6 +74,11 @@
     self.lineSegments = [self generateLines];
 }
 
+- (void)setFrame:(CGRect)frame {
+    [super setFrame:frame];
+    [self generateLines];
+}
+
 #pragma mark - Update
 - (void)update {
     [self updateLineSegments];
