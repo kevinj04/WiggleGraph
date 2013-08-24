@@ -64,6 +64,23 @@
     self.titleLabel.text = self.title;
 }
 
+#pragma mark - Setters
+- (void)setTitle:(NSString *)title {
+    _title = title;
+    [self updateScales];
+}
+- (void)setUnit:(NSString *)unit {
+    _unit = unit;
+    [self updateScales];
+}
+- (void)setMax:(CGFloat)max {
+    _max = max;
+    [self updateScales];
+}
+- (void)setMin:(CGFloat)min {
+    _min = min;
+    [self updateScales];
+}
 - (void)setFrame:(CGRect)frame {
     [super setFrame:frame];
     [self layoutLabels];
