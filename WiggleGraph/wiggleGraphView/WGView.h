@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WGScaleView.h"
 
 @interface WGView : UIView
 
@@ -14,6 +15,7 @@
 @property (assign, nonatomic) NSInteger plotSize;
 @property (assign, nonatomic) CGFloat wiggleSize;
 @property (strong, nonatomic) UIColor *fillColor;
+@property (strong, nonatomic) WGScaleView *scale;
 
 @property (strong, nonatomic) CADisplayLink *displayLink;
 
