@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/kevinj04/WiggleGraph.git"
   s.license      = { :type => 'WTFPL', :file => 'license.txt' }
   s.author       = { "Kevin Jenkins" => "kevinj04@gmail.com" }
-  s.source       = { :git => "https://github.com/kevinj04/WiggleGraph.git", :tag => "1.0.2" }
+  s.source       = { :git => "https://github.com/kevinj04/WiggleGraph.git", :tag => "1.0.3" }
   s.platform     = :ios, '5.0'
   s.source_files = 'WiggleGraph/**/*.{h,m}'
   s.requires_arc = true
