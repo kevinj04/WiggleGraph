@@ -44,9 +44,9 @@
 - (void)layoutLabels {    
 
     self.maxLabel.frame = CGRectMake(0, 0, 50, 15);
-    self.midLabel.frame = CGRectMake(0, (self.frame.size.height/2.0)-15, 50, 15);
+    self.midLabel.frame = CGRectMake(0, (self.frame.size.height/2.0)-7.5, 50, 15);
     self.minLabel.frame = CGRectMake(0, self.frame.size.height-15, 50, 15);
-    self.titleLabel.frame = CGRectMake(self.frame.size.width-50, 0, 50, 15);
+    self.titleLabel.frame = CGRectMake(self.frame.size.width-150, 0, 150, 15);
 
     self.maxLabel.font = [UIFont systemFontOfSize:8];
     self.midLabel.font = [UIFont systemFontOfSize:8];
