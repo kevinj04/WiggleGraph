@@ -37,6 +37,13 @@
     self.wiggleSize = 50;
     self.fillColor = [UIColor greenColor];
     self.plotValues = [self generatePlotValues];
+    self.scale = [[WGScaleView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+    [self addSubview:self.scale];
+}
+
+- (void)setFrame:(CGRect)frame {
+    [super setFrame:frame];
+    [self.scale setFrame:frame];
 }
 
 - (NSArray *)generatePlotValues {

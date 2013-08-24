@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		471831DD17B6E77F000F8D3C /* WGScaleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 471831DC17B6E77F000F8D3C /* WGScaleView.m */; };
 		47405BBE1787370C00960E6D /* WGPlotPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 47405BBD1787370C00960E6D /* WGPlotPoint.m */; };
 		47405BC11787372100960E6D /* WGCurvyPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 47405BC01787372100960E6D /* WGCurvyPoint.m */; };
 		47405BC517873FA700960E6D /* WGCurvyLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 47405BC417873FA700960E6D /* WGCurvyLine.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		471831DB17B6E77F000F8D3C /* WGScaleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGScaleView.h; sourceTree = "<group>"; };
+		471831DC17B6E77F000F8D3C /* WGScaleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGScaleView.m; sourceTree = "<group>"; };
 		47405BBC1787370C00960E6D /* WGPlotPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGPlotPoint.h; sourceTree = "<group>"; };
 		47405BBD1787370C00960E6D /* WGPlotPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGPlotPoint.m; sourceTree = "<group>"; };
 		47405BBF1787372100960E6D /* WGCurvyPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGCurvyPoint.h; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 				47405BBB1787370C00960E6D /* points */,
 				47608C7F17824B6A001DC4C3 /* WGView.h */,
 				47608C8017824B6A001DC4C3 /* WGView.m */,
+				471831DB17B6E77F000F8D3C /* WGScaleView.h */,
+				471831DC17B6E77F000F8D3C /* WGScaleView.m */,
 				47608C82178266F3001DC4C3 /* WGBoxyView.h */,
 				47608C83178266F3001DC4C3 /* WGBoxyView.m */,
 				47608C8417826811001DC4C3 /* WGCurvyView.h */,
@@ -311,6 +316,7 @@
 				47608C8617826811001DC4C3 /* WGCurvyView.m in Sources */,
 				47608C6017824B0B001DC4C3 /* WGViewController.m in Sources */,
 				47608C5A17824B0B001DC4C3 /* WGAppDelegate.m in Sources */,
+				471831DD17B6E77F000F8D3C /* WGScaleView.m in Sources */,
 				47608C5617824B0B001DC4C3 /* main.m in Sources */,
 				47405BC517873FA700960E6D /* WGCurvyLine.m in Sources */,
 			);
